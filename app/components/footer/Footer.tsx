@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <div className='fixed bottom-0 w-full'>
         <div>
-
         </div>
         <div className='flex justify-between h-8'>
 
