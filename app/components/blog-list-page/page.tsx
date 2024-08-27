@@ -3,7 +3,7 @@ import React from 'react'
 import { getBlogPosts } from '@/app/api/blog-apies'
 import { useState, useEffect } from 'react'
 import BlogCard from './blog-cards/BlogCard'
-const page = () => {
+const Page = () => {
   const [posts, setPosts] = useState([])
   const [isloading, setLoding] = useState(true)
 
@@ -33,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

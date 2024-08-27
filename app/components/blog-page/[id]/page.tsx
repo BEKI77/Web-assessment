@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { getPost } from '@/app/api/blog-apies';
 import { FaGripLinesVertical } from "react-icons/fa";
 
-const page = ({params:{id}}:{params:{id:string}}) => {
+const Page = ({params:{id}}:{params:{id:string}}) => {
     const  [post, setPost] = useState<any>({})
     const [isloading, setLoding] = useState(true)
 
@@ -55,6 +55,6 @@ const page = ({params:{id}}:{params:{id:string}}) => {
         </div>
 
   )
-}
 
-export default page
+}
+export default Page
