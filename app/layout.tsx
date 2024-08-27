@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import { CookiesProvider } from "next-client-cookies/server";
 import { Inter } from "next/font/google";
+import Header from "./components/header/Header";
 import "./globals.css";
+import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <CookiesProvider>
+      <html lang="en">
+        <body className={`${inter.className} h-auto pt-0`}>
+          <Header/>
+          <div className="relative top-24 h-auto pt-0">
+            {children}
+          </div>
+          <Footer/>
+        </body>
+      </html>
+    </CookiesProvider>
   );
 }
