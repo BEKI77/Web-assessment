@@ -25,7 +25,7 @@ const page = () => {
   return (
     <div>
         <div className='w-[80%] mx-auto flex flex-col gap-4'>
-            { isloading ? <p>Loading...</p> :
+            { isloading ? <p className='text-center' >Loading...</p> :
                 posts.filter((post:any)=>(post.author?.name)).map((post:any,i) => <BlogCard key={i} {...post} />)
             }
         </div>
