@@ -54,3 +54,7 @@ Before you begin, make sure you have the following installed:
 
 ## 🖼️ Screenshots
 ![Blog Screenshot](./public/screenshots/img1.png)
+
+![Blog1 Screenshot](./public/screenshots/img2.png)
+
+![Blog Screenshot](./public/screenshots/img3.png)

@@ -12,6 +12,7 @@ const Page = ({params:{id}}:{params:{id:string}}) => {
         const fetchData = async()=>{
             try{
               const res:any = await getPost(id)
+              console.log(res)
               if(res){
                 setPost(res)
                 setLoding(false)
@@ -38,7 +39,7 @@ const Page = ({params:{id}}:{params:{id:string}}) => {
                     <img src={post.image} alt={post.title} className='rounded-md'/>
                 </div>
                 <div className='mx-auto w-[50%]'>
-                    <img src={post.author.image} alt='img' className='w-[50px] h-[50px] rounded-full mx-auto my-3' />
+                    <img src={post?.author?.image} alt='img' className='w-[50px] h-[50px] rounded-full mx-auto my-3' />
                     <div className='flex gap-3 justify-center p'>
                         <h3 className='text-[14px] font-mono' >{post.author.name}</h3>
                         <FaGripLinesVertical size={10} className='my-auto' />

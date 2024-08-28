@@ -4,7 +4,7 @@ import { faTwitter, faFacebook, faYoutube, faLinkedin, faInstagram } from '@fort
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 mt-3 bottom-0 w-full">
+    <footer className="bg-gray-100 text-gray-700 mt-3 bottom-0 w-full relative ">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">

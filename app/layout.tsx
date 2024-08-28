@@ -22,9 +22,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${inter.className} h-auto pt-0`}>
           <Header/>
-          <div className="relative top-24 h-auto pt-0">
+          <div className="relative top-24 h-auto pt-0 mb-36">
             {children}
-          </div>
+          </div> 
           <Footer/>
         </body>
       </html>
