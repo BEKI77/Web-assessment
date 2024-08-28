@@ -1,6 +1,8 @@
+const baseUrl = ``
+
 export const getBlogPosts = () => {
     try{
-        const response = fetch("https://a2sv-backend.onrender.com/api/blogs").then((res)=>res.json())
+        const response = fetch('/data.json').then((res)=>res.json())
 
         if(response==null){
             throw new Error("Response is null");
@@ -16,7 +18,7 @@ export const getBlogPosts = () => {
 
 export const getPost = (id:string)=>{
     try{
-        const response = fetch(`https://a2sv-backend.onrender.com/api/blogs/${id}`,
+        const response = fetch(`${baseUrl}/api/blogs/${id}`,
             {
                 cache:"force-cache",
             }
