@@ -58,3 +58,7 @@ Before you begin, make sure you have the following installed:
 ![Blog1 Screenshot](./public/screenshots/img2.png)
 
 ![Blog Screenshot](./public/screenshots/img3.png)
+
+![Blog Screenshot](./public/screenshots/img4.png)
+
+![Blog Screenshot](./public/screenshots/img5.png)
